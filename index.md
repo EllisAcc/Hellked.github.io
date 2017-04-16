@@ -5,7 +5,7 @@
 
 <h1>张顺的博客</h1>
 
-
+你能[百度](http://baidu.com)
 
 
 You can use the [editor on GitHub](https://github.com/Hellked/Hellked.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
