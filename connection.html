@@ -1,0 +1,38 @@
+因为在连接数据库的时实际的环境是不确定的，所以在我们未假定环境时进行数据库的连接说明是耍流氓，因此，我们必须先要假定环境.
+首先，假设我们连的时MySQL数据库，并且MySQL的GUI Manger 我们用的是自带的workbeach，User和Password 分别是root和12345，并且我们用eclipse写一个java类的方式连接，好了，情况说明完毕，下面该开始连接了。
+第一步：
+先打开MySQL的workbeach,建立数据库name:Student ，table :student. OK
+第二步
+open the eclipse ,建立工程，类(在此不在唠叨),
+把jar包导入工程
+第四步
+类的代码如下：
+{
+Connection con =null;
+Statement sta =null;
+
+String driver = "com.mysqll.jdbc.Driver";//驱动名称
+
+try {
+        Class.forName(driver):
+} catch(Exception e){
+  System.out.println("驱动加载失败");
+  e.printStackTrace();
+}
+//连接数据库
+String url = "jdbc:mysql://localhost:3366/databasename;
+
+try{
+      con =     DriverManager.getConnection(url,"root","password");
+........
+}//逐条关闭
+catch(exception e)
+{
+System.out.println("get data error");
+e.printStackTrace();
+}
+}
+连接数据库完毕
+第五步
+game over f
+可以快乐的吃饭去了
